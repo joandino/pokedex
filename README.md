@@ -1,4 +1,8 @@
-# pokedex-ts
+# Pokedex
+
+## Live demo
+
+You can see a live demo of the app here: https://gleeful-sunburst-660681.netlify.app/
 
 ## Project setup
 ```
