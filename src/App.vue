@@ -1,29 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      color="red"
+      dark
+    >
+      <v-toolbar-title>Pokemons</v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <Home />
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Vue from 'vue';
+import Home from './components/Home.vue';
 
-@Component({
+export default Vue.extend({
+  name: 'App',
+
   components: {
-    HelloWorld,
+    Home,
   },
-})
-export default class App extends Vue {}
+
+  data: () => ({
+    //
+  }),
+});
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-image: url('~@/assets/pokeball.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>
