@@ -4,7 +4,7 @@
       color="red"
       dark
     >
-      <v-toolbar-title>Pokemons</v-toolbar-title>
+      <v-toolbar-title>Pokemon</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
